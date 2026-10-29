@@ -33,5 +33,3 @@ while True:
         print(f"{a:#x} * {b:#x} = {C:#x}");
         break;
             
-            
-        
