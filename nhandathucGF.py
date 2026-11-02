@@ -1,7 +1,7 @@
 def nhandathuc(a, b, n, P):
     bit_cao = 1 << (n - 1);
     quychieu = (1 << n) - 1;
-    C = 0;
+    C = 0; #kq ban đầu = 0
     while(n != 0):
         if(a & 1) != 0:
             C = C^b
@@ -29,7 +29,7 @@ while True:
     if(a >= (1 << n))or(b >= (1 << n)):
         print("LỖI(a hoặc b quá lớn)");
     else:
-        C=nhandathuc(a, b, n, P);
+        C = nhandathuc(a, b, n, P);
         print(f"{a:#x} * {b:#x} = {C:#x}");
         break;
             
